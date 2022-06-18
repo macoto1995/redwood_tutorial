@@ -5,15 +5,23 @@ const AboutPage = () => {
   return (
     <>
       <MetaTags title="About" description="About page" />
-
-      <h1>AboutPage</h1>
-      <p>
-        Find me in <code>./web/src/pages/AboutPage/AboutPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>about</code>, link to me with `
-        <Link to={routes.about()}>About</Link>`
-      </p>
+      <header>
+        <h1>Redwood Blog</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to={routes.about()}>About</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <p>
+          This site was created to demonstrate my mastery of Redwood: Look on my
+          works, ye mighty, and despair!
+        </p>
+      </main>
+      <Link to={routes.home()}>Return Home</Link>
     </>
   )
 }
