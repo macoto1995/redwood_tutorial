@@ -20,7 +20,9 @@ import { toast, Toaster } from '@redwoodjs/web/toast'
 const CREATE_CONTACT = gql`
   mutation CreateContactMutation($input: CreateContactInput!) {
     createContact(input: $input) {
-      id
+      email
+      name
+      message
     }
   }
 `
